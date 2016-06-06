@@ -1,0 +1,49 @@
+<h1>New Address</h1>
+<form ng-submit="address.submit()">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input
+      class="form-control"
+      id="name"
+      type="text"
+      placeholder="Joe"
+      required
+      ng-model="address.person.name"
+    />
+  </div>
+  <div class="form-group">
+    <label for="phone">Phone</label>
+    <input
+      class="form-control"
+      id="phone"
+      type="tel"
+      placeholder="234-567-8900"
+      required
+      ng-model="address.person.phone"
+    />
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input
+      class="form-control"
+      id="email"
+      type="email"
+      placeholder="joe@example.com"
+      required
+      ng-model="address.person.email"
+    />
+  </div>
+  <div class="form-group">
+    <label for="twitter">Twitter</label>
+    <input
+      class="form-control"
+      id="twitter"
+      type="text"
+      placeholder="joe"
+      required
+      ng-model="address.person.twitter"
+    />
+  </div>
+  <a href="#/addresses" class="btn btn-danger">Cancel</a>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
