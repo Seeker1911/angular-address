@@ -6,13 +6,19 @@ angular.module('app', ['ngRoute', 'ui.bootstrap'])
         controllerAs: 'main',
         templateUrl: 'app/partials/main.html',
       })
+      .when('/addresses', {
+        controller: 'AddressCtrl',
+        controllerAs: 'address',
+        templateUrl: 'app/partials/addresses.html',
+      })
       .otherwise('/')
   ))
+
   .controller('MainCtrl', function () {
     const main = this
-
-  
-
-    main.closeAlert = (index) => main.alerts.splice(index, 1)
-
   })
+
+ .controller('AddressCtrl', function () {
+    const address = this
+  })
+
